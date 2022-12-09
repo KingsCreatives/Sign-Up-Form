@@ -8,40 +8,48 @@
     <title>Sign Up Form</title>
 </head>
 <body>
-    <div class="container">
         <div class="wrapper">
-            
+            <div class="img">
+                <img src="./warren-wong-bh4LQHcOcxE-unsplash.jpg" alt="Phone with money alert" width="400px">
+                <div class="text-center">
+                    <h1>Live Stream Music &copy;</h1>
+                </div>
+            </div>
            <form action="example.com" class="form" method="post">
                 <div class="form-text">
                     <h3>Create an account</h3>
-                    <p>Let's get started with your 30 day free trial!</p>
+                    <p>Try Premuim free for 3 months. Listen to your music
+                       offline and ad-free. Monthly subscription fee applies after.
+                       Open only to users who haven't tried premuim. 
+                    </p>
                 </div>
             <div class="main-form">
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name" placeholder="Thor" required>
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" name="last_name" placeholder="Odinson" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="thor@gmail.com" required>
-                <label for="phone-number">Phone Number</label>
-                <input type="tel" id="phone_number" name="phone_number" pattern="/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/" required>
-                <label for="password">Passowrd</label>
-                <input type="password" id="password" name="password" required>
-                <label for="confirm_password">Confirm Password</label>
-                <input type="password" id="confirm_password" name="confirm_password" required>
-
+               <div class="form-row">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Thor" required>
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Odinson" required>
+               </div>
+               <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="thor@gmail.com" required>
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone_number" name="phone_number" pattern="/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/" required>
+               </div>
+                <div class="form-row">
+                    <label for="password">Passowrd</label>
+                    <input type="password" id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"  required>
+                </div>
             </div> 
             <div class="btn">
                     <button type="submit">Create account</button>
                     <p>Already have an account? <b>Log in</b></p>
                 </div>
             </form>
-            <div class="img">
-                <img src="./image.jpg" alt="Phone with money alert">
-            </div>
-            
         </div>
-    </div>
+    
 
     <script src="./app.js"></script>
 </body>
