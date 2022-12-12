@@ -5,51 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Sign Up Form</title>
+    <title>Sign-Up Form</title>
 </head>
 <body>
-        <div class="wrapper">
-            <div class="img">
-                <img src="./warren-wong-bh4LQHcOcxE-unsplash.jpg" alt="Phone with money alert" width="400px">
-                <div class="text-center">
-                    <h1>Live Stream Music &copy;</h1>
-                </div>
+    <div class="wrapper">
+        <div class="image-div">
+
+        </div>
+        <div class="form-container">
+            <div class="form-text">
+                <h2>Sign Up Now</h2>
+                <p>Listen to your favourite music offline and ad-free for <a href="form" >3 months</a ></p>
             </div>
-           <form action="example.com" class="form" method="post">
-                <div class="form-text">
-                    <h3>Create an account</h3>
-                    <p>Try Premuim free for 3 months. Listen to your music
-                       offline and ad-free. Monthly subscription fee applies after.
-                       Open only to users who haven't tried premuim. 
-                    </p>
+            <form action="#" class="form" method="post" id="form">
+                <div class="form-wrap fullname">
+                    <div class="form-row">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name"  required>
+                    </div>
+                    <div class="form-row">
+                        <label for="surname">Last Name</label>
+                        <input type="text" id="surname" name="surname"  required>
+                    </div>
                 </div>
-            <div class="main-form">
-               <div class="form-row">
-                    <label for="first_name">First Name</label>
-                    <input type="text" id="first_name" name="first_name" placeholder="Thor" required>
-                    <label for="last_name">Last Name</label>
-                    <input type="text" id="last_name" name="last_name" placeholder="Odinson" required>
-               </div>
-               <div class="form-row">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="thor@gmail.com" required>
-                    <label for="phone-number">Phone Number</label>
-                    <input type="tel" id="phone_number" name="phone_number" pattern="/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/" required>
-               </div>
-                <div class="form-row">
-                    <label for="password">Passowrd</label>
-                    <input type="password" id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
-                    <label for="confirm_password">Confirm Password</label>
-                    <input type="password" id="confirm_password" name="confirm_password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"  required>
+                <div class="form-wrap email-number">
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"  required>
+                    </div>
+                    <div class="form-row">
+                        <label for="number">Telephone Number</label>
+                        <input type="tel" id="number" name="number"  required>
+                    </div>
                 </div>
-            </div> 
-            <div class="btn">
-                    <button type="submit">Create account</button>
-                    <p>Already have an account? <b>Log in</b></p>
+                <div class="form-wrap passwords">
+                    <div class="form-row">
+                        <label for="password">*Password</label>
+                        <input type="password" id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
+                        "  required>
+                    </div>
+                    <div class="form-row">
+                        <label for="confirm-password">*Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
+                        " required>
+                    </div>
                 </div>
             </form>
         </div>
-    
+    </div>
+
+
 
     <script src="./app.js"></script>
 </body>
