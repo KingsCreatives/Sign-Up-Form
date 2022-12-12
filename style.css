@@ -7,27 +7,64 @@
 
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #242582;
-    height: 100vh;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: black;
 }
 
+.image-div{
+    position: relative;
+}
+
+.image-div h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-weight: bold;
+    top: 10%;
+    left: 50%;
+}
+
+
+
 .wrapper {
-    max-width: 900px;
-    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
     margin: 30px auto 0;
     padding: 10px;
 }
 
-.wrapper .form-container{
-    background-color: #e1edf9 ;
-    padding: 30px;
-    box-shadow: 1px 1px 15px rgba(0,0,0,0.15);
-    border-radius: 3px;
+.form-wrap{
+    display: flex;
 }
+
+.form-container{
+    background-color: white;
+    width: 600px;
+    height: 500px
+}
+
+.wrapper .form-container{
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.form-row.telephone,
+.form-row.confirm,
+.form-row.surname{
+    margin-left: 33px;
+}
+
+
 
 .form-text{
     text-align: center;
-    margin-bottom: 75px;
+    margin-bottom: 30px;
 }
 
 .form-text h2{
@@ -51,28 +88,41 @@ body{
 
 .form-row{
     margin-bottom: 25px;
-    margin-right: 25px;
 }
 
+
+
 .form-row input{
-    width: 100%;
+    width: 250px;
     padding: 5px;
     font-size: 16px;
     border-radius: 5px;
 }
 
-.form-row label{
-    display: block;
+.btn{
+    padding-top: 10px;
+   text-align: center;
+   background-color: white;
 }
 
-.form-wrap{
-    margin-left: 15%;
-    margin-right: 15%;
-  display: flex;
+.btn button{
+    border: none;
+    cursor: pointer;
+    padding: 5px 50px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #F64C72;
+    margin-bottom: 15px;
 }
 
-.form-wrap{
-    width: 50%;
-
+.btn p a{
+    text-decoration: none;
+    font-weight: bold;
 }
 
+
+.img-div img{
+    height: 100vh;
+}

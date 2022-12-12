@@ -10,7 +10,8 @@
 <body>
     <div class="wrapper">
         <div class="image-div">
-
+            <img src="./ben-collins-Fr2iwKpsi-Y-unsplash.jpg" alt="" width="550px">
+            <h1>Cody's Spotify</h1>
         </div>
         <div class="form-container">
             <div class="form-text">
@@ -23,7 +24,7 @@
                         <label for="first_name">First Name</label>
                         <input type="text" id="first_name" name="first_name"  required>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row surname">
                         <label for="surname">Last Name</label>
                         <input type="text" id="surname" name="surname"  required>
                     </div>
@@ -33,7 +34,7 @@
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email"  required>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row telephone">
                         <label for="number">Telephone Number</label>
                         <input type="tel" id="number" name="number"  required>
                     </div>
@@ -44,11 +45,16 @@
                         <input type="password" id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
                         "  required>
                     </div>
-                    <div class="form-row">
-                        <label for="confirm-password">*Confirm Password</label>
-                        <input type="password" id="confirm-password" name="confirm-password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
+                    <div class="form-row confirm">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password"  id="confirm-password" name="confirm-password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
                         " required>
                     </div>
+                </div>
+
+                <div class="btn">
+                    <button type="submit">Submit</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
                 </div>
             </form>
         </div>
