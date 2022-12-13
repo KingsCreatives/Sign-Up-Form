@@ -10,6 +10,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     background-color: black;
+    width: 100%;
 }
 
 .image-div{
@@ -128,3 +129,12 @@ body{
 .img-div img{
     height: 100vh;
 }
+
+
+
+
+
+
+
+
+
